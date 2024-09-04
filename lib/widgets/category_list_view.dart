@@ -1,8 +1,7 @@
-// ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:news_app/models/CategoryModel.dart';
-import 'package:news_app/widgets/CategoryCard.dart';
+import 'package:news_app/models/category_model.dart';
+import 'package:news_app/widgets/category_card.dart';
 
 class CategoryListView extends StatelessWidget {
   const CategoryListView({

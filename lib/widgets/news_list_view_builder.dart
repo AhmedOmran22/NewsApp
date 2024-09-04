@@ -1,10 +1,8 @@
-// ignore_for_file: file_names, non_constant_identifier_names
-
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:news_app/models/ArticleModel.dart';
+import 'package:news_app/models/article_model.dart';
 import 'package:news_app/services/news_Service.dart';
-import 'package:news_app/widgets/newsListView.dart';
+import 'package:news_app/widgets/news_list_view.dart';
 
 class NewsListViewBuilder extends StatefulWidget {
   final String categoryName;
@@ -31,7 +29,7 @@ class _NewsListViewBuilderState extends State<NewsListViewBuilder> {
       future: future,
       builder: (context, Snapshot) {
         if (Snapshot.hasData) {
-          return newsListView(
+          return NewsListView(
             articles: Snapshot.data!,
           );
         } else if (Snapshot.hasError) {

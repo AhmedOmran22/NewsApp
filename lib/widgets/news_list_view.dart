@@ -1,13 +1,11 @@
-// ignore_for_file: file_names, camel_case_types
-
 import 'package:flutter/material.dart';
-import 'package:news_app/models/ArticleModel.dart';
-import 'package:news_app/widgets/newsTile.dart';
+import 'package:news_app/models/article_model.dart';
+import 'package:news_app/widgets/news_tile.dart';
 
-class newsListView extends StatelessWidget {
+class NewsListView extends StatelessWidget {
   final List<ArticleModel> articles;
 
-  const newsListView({
+  const NewsListView({
     super.key,
     required this.articles,
   });

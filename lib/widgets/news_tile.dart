@@ -1,7 +1,6 @@
-// ignore_for_file: file_names, unnecessary_null_comparison
 
 import 'package:flutter/material.dart';
-import 'package:news_app/models/ArticleModel.dart';
+import 'package:news_app/models/article_model.dart';
 
 class NewsTile extends StatelessWidget {
   const NewsTile({
